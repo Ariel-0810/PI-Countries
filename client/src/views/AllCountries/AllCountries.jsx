@@ -120,10 +120,6 @@ const AllCountries = () => {
             
         </div>
     
-        <div>
-            <Cards countries={currentCountries}  />
-        </div>
-        
         <div className={styles.pagination}>
             {currentPage > 1 &&
                 <button onClick={() => setCurrentPage(currentPage - 1)}>Prev</button>
@@ -143,6 +139,10 @@ const AllCountries = () => {
                 <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
             }
         </div> 
+        <div>
+            <Cards countries={currentCountries}  />
+        </div>
+        
     </div>
   )
 }
