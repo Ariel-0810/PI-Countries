@@ -5,6 +5,7 @@ const {
 } = require("../handlers/activitiesHandlers");
 
 const activitiesRouter = Router();
+
 const validate = (req, res, next) => {
   const { name, difficulty, duration, season } = req.body;
   if (![name, difficulty, duration, season].every(Boolean))
