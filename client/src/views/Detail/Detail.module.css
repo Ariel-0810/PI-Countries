@@ -1,5 +1,4 @@
-.NavBarButtons{
-    /* !!falso navBar porque no me renderiza el navBar correspondiente */
+.NavBarButtons{    
      display: flex;
        flex-wrap: wrap;
        align-items: center;

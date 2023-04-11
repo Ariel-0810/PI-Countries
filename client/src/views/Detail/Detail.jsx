@@ -66,8 +66,9 @@ const Detail = () => {
                             <div className={styles.author}> 
                                 <h2>Capital: {country.capital}</h2>
                                 <h2>Continente: {country.continent}</h2>
-                                <h4>{country.subregion}</h4>
+                                <h4>Subregion: {country.subregion}</h4>
                                 <span className={styles.name}>
+                                <h3>Area: {country.area}</h3>
                                 <h3>Población: {country.population}</h3>
                                 </span> 
                                 <h2>Actividades turísticas:</h2>

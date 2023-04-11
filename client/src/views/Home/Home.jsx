@@ -8,8 +8,6 @@ import styles from "./Home.module.css"
 
 
 const Home = () => {
-    
-
     const dispatch = useDispatch()
     const countries = useSelector(state => state.countries)
 
@@ -19,9 +17,8 @@ const Home = () => {
         }
     }, [dispatch, countries.length]);
 
-
     return (
-        <div className={styles.home}> {/* //!no renderiza el style */}
+        <div className={styles.home}>
             <CardContainer></CardContainer>
         </div>
     )
