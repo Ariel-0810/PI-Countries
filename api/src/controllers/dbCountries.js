@@ -4,7 +4,7 @@ const axios = require("axios");
 const apiCountries = async () => {
   try {
     let apiDB = await Country.findAll();
-    if (apiDB.length) return apiDB; //? di tengo algo, no hago nada
+    if (apiDB.length) return apiDB; //? si tengo algo, no hago nada
 
     const apiResponse = await axios.get("https://restcountries.com/v3/all"); // ? solicita los datos a la api externa
     const allCountries = await apiResponse.data.map((country) => ({
